@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: crimson;
+        }
+        #box{
+            width: 25%;
+            margin: auto;
+            margin-top: 1%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0;
+        }
+        form input{
+            padding: 10px;
+            border-radius: 5px;
+            outline: none;
+        }
+        form select{
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            outline: none;
+        }
+        form button{
+            padding: 10px;
+            border-radius: 5px;
+            outline: none;
+            background-color: crimson;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        form #color{
+            padding: 0;
+            border-radius: 5px;
+            outline: none;
+        }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+   <div id="box">
+     <h1>Registration Form</h1>
+  <form name="myForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="name..." required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="email..." required><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="phone..." required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="password..." required><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" placeholder="age..." required><br>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select><br>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required><br>
+
+    <label >Favorite Color:</label>
+    <input type="color" id="color"><br>
+    <button onclick="sub()">Submit</button>
+   </div>
+    <script>
+        function sub(){
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const password = document.getElementById("password").value;
+            const age = document.getElementById("age").value;
+            const gender = document.getElementById("gender").value;
+            const date = document.getElementById("date").value;
+            if(name !== " " || email !== " " || phone !== " " || password !== " " || age !== " " || gender !== " " || date !== " "){
+                alert("Please fill all field")
+            }
+            else{
+                alert("Thank you for submitted")
+            }
+        }
+  </script>
+</body>
+</html>

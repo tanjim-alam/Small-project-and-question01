@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        nav{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: white;
+        }
+        .navigation ul{
+            display: flex;
+            gap: 20px;
+        }
+        .navigation ul li a{
+            font-size: 17px;
+            font-weight: 550;
+            color: #fd6d49;
+        }
+        .navigation ul li a:hover{
+            text-decoration: solid;
+            color: #050505;
+        }
+        .logo a img{
+            width: 120px;
+        }
+        .buttons{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .buttons button{
+            padding: 10px;
+            /* background-color: #fd6d49;
+            color: white; */
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+            cursor: pointer;
+        }
+        .buttons #signinbtn{
+            background: transparent;
+            border: 1px solid black;
+        }
+        .buttons #signinbtn:hover{
+            background-color: #fd6d49;
+            color: white;
+            border: none;
+        }
+        .buttons #signupbtn{
+            background-color: #fd6d49;
+            color: white;
+            border: none;
+        }
+        .buttons #signupbtn:hover{
+            background: transparent;
+            color: #050505;
+            border: 1px solid black;
+        }
+        .buttons .fa-search:hover{
+            background-color: #fd6d49;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buttons a{
+            color: #fd6d49;
+        }
+        .buttons a i{
+            margin-right: 5px;
+        }
+        .hero img{
+            height: 91vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="/index.html"><img src="https://www.producthood.com/wp-content/uploads/vendors/Socialfly.png" alt=""></a>
+            </div>
+            <div class="buttons">
+                <a href="mailto:example@pwskills.com"><i class="fa fa-envelope"></i>example@pwskills.com</a>
+                <i class="fa fa-search"></i>
+                <button id="signinbtn">Sign In</button>
+                <button id="signupbtn">Sign Up</button>
+            </div>
+        </nav>
+        <div class="hero">
+            <img src="https://www.syntacticsinc.com/wp-content/uploads/2022/05/Fashion-Website-Templates-in-2022-1024x538.jpg" alt="">
+        </div>
+    </header>
+</body>
+</html>

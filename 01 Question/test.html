@@ -1,0 +1,54 @@
+1. Static
+The default position value for elements is static,
+where they are positioned according to the normal flow of the document.
+
+<div class="box">
+  This is a static position element.
+</div>
+
+<!-- ==================== -->
+
+2. Fixed
+Elements with position: fixed are positioned relative to the viewport
+and remain fixed even when the page is scrolled.
+
+<div class="box" style="position: fixed; top: 20px; right: 20px;">
+  This is a fixed position element.
+</div>
+
+<!-- ===================== -->
+
+3. Sticky
+Elements with position: sticky are positioned based on the normal
+flow of the document until a specified scroll position is reached.
+Then, they become "sticky" and remain fixed in that position.
+
+<div class="box" style="position: sticky; top: 20px;">
+  This is a sticky position element.
+</div>
+
+<!-- ===================== -->
+
+4. Relative
+Elements with position: relative are positioned relative to their normal
+position in the document flow. Adjusting the top, bottom, left, or right
+properties can move them from their original position.
+
+<div class="box" style="position: relative; left: 20px; top: 10px;">
+  This is a relative position element.
+</div>
+
+<!-- ========================= -->
+
+
+5. Absolute
+Elements with position: absolute are positioned relative to the nearest
+positioned ancestor (an element with a position value other than static) or
+the containing block. They are taken out of the normal flow and can overlap other elements.
+
+<div class="container" style="position: relative;">
+  <div class="box" style="position: absolute; top: 50px; left: 50px;">
+    This is an absolute position element.
+  </div>
+</div>
+
